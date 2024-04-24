@@ -15,6 +15,7 @@ def place_word(grid, word, orientation, row, col, first_letter_color, color_grid
                 placed = False
         if placed:
             grid[row, col:col + word_length] = list(word)
+            print('Placed ' + word + ' at col' + str(col + word_length))
             if flipped:
                 color_grid[row, col + word_length - 1] = first_letter_color
             else:
@@ -27,6 +28,7 @@ def place_word(grid, word, orientation, row, col, first_letter_color, color_grid
                 placed = False
         if placed:
             grid[row:row + word_length, col] = list(word)
+            print('Placed ' + word + ' at row ' + str(row + word_length))
             if flipped:
                 color_grid[row + word_length - 1, col] = first_letter_color
             else:
@@ -79,12 +81,13 @@ def create_crossword(word_list, color_codes_sonnenstrand, size=(15, 15)):
     return grid, color_grid
 
 # List of cities
-words = ['Odessa', 'Goldstrand', 'Alapli', 'Yalta', 'Sochi','Batumi'
+words = ['Odessa', 'Goldstrand', 'Alapli', 'Yalta', 'Sochi','Batumi',
          'Constanca','Zonguldak', 'Trabzon', 'Sulina', 'Burgas', 'Varna']
 
 # Make the words uppercase
 words = [word.upper() for word in words]
 
+print('words', words)
 #Make as many words as letters in the word SONNENSTRAND
 # count letters in the word SONNENSTRAND
 l = len('SONNENSTRAND')
@@ -100,8 +103,8 @@ color_codes = {
     'E': '35',    # Magenta
     'T': '90',    # Bright black (dark gray)
     'R': '31;1',  # Bright red (distinct variation from normal red)
-    'A': '35;1',  # Bright magenta (different from normal magenta)
-    'D': '34'     # Blue (ensure 'D' is included)
+    'A': '39',  # Bright magenta (different from normal magenta)
+    'D': '92'     # Blue (ensure 'D' is included)
 }
 
 # Randomize the order of keys
@@ -135,3 +138,5 @@ for i in range(crossword.shape[0]):
         color_code = random.choice(list(color_codes.values()))
         print(f"\033[1;{color_grid[i,j]}m{crossword[i, j]}\033[0m", end=' ')
     print()
+
+

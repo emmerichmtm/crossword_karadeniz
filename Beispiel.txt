@@ -1,0 +1,31 @@
+words ['ODESSA', 'GOLDSTRAND', 'ALAPLI', 'YALTA', 'SOCHI', 'BATUMI', 'CONSTANCA', 'ZONGULDAK', 'TRABZON', 'SULINA', 'BURGAS', 'VARNA']
+R E S A D T O N
+Placed ODESSA at row 13
+Placed DNARTSDLOG at col14
+Placed ALAPLI at row 10
+Placed YALTA at row 13
+Placed IHCOS at col8
+Placed BATUMI at col14
+Placed CONSTANCA at col12
+Placed KADLUGNOZ at row 10
+Placed NOZBART at col12
+Placed ANILUS at col14
+Placed SAGRUB at row 14
+Placed VARNA at row 9
+D Z U R E K M C E K F C B G J
+I F K C O N S T A N C A H N C
+X W A X D N A R T S D L O G Y
+A Z D I H C O S A N I L U S P
+A X L A V T V V T I C W K B G
+L E U Q A N O Z B A R T G P D
+A T G M R F G M A Y E G U A Y
+P P N R N R U O S Y S U V T E
+L Y O V A S V D B A T U M I B
+I A Z T F A T E C R O B Z A U
+G L T P C G B S C R H H J V X
+J T H W D R R S N I A I B I C
+Y A M R L U G A E V H Z D M J
+Z M N R W B D G A C X O X R V
+P M Y E Z R G T W G M R V G T
+
+Process finished with exit code 0
